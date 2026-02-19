@@ -7,12 +7,15 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "bun run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
     "@types/lodash": "^4.17.23",
     "clsx": "^2.1.1",
+    "gh-pages": "^6.3.0",
     "immer": "^11.1.4",
     "lodash": "^4.17.23",
     "motion": "^12.34.2",
